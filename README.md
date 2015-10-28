@@ -1,4 +1,6 @@
 # yijing
+*version 1.0*
+
 A yijing (I Ching) visualiser written in Processing
 
 Just a toy written as a first Processing project. I don't know much about the yijing, but it's cool how this explores its relation to binary. 
