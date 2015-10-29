@@ -23,6 +23,7 @@ class Gua {
     println();
   } // end Gua()
   
+  // Construct a hexagram with a given (base 10) value.
   Gua(int value) {
     String binary = binary(value, 6);
     println("parsed binary: " + binary);
