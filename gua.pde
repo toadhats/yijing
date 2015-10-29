@@ -40,7 +40,7 @@ class Gua {
     pg.beginDraw();
     pg.fill(0);
     pg.background(255);
-    int i = 0; 
+    int i = 5; // we have to read them backwards because tradition places the "smallest bit" at the top
 
       for (y = 0; y <= 250; y = y + 50) {
       //y = (height / 6 ) * i;
@@ -54,7 +54,7 @@ class Gua {
         pg.rect(x, y, width, lineHeight); //<>//
         println("-----");
       } // end else
-      i++;
+      i--;
     } //end for
     pg.endDraw();
     return pg; //<>//
