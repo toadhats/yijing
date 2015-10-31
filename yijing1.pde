@@ -36,7 +36,7 @@ void draw() {
     text(text, 200, 375);
     println("Binary: " + gua.toString());
     println("Int value: " + gua.toInt());
-  
+
 }
 
 void mouseClicked() {

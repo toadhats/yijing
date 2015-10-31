@@ -22,7 +22,7 @@ class Gua {
     }
     println();
   } // end Gua()
-  
+
   // Construct a hexagram with a given (base 10) value.
   Gua(int value) {
     String binary = binary(value, 6);
@@ -30,7 +30,7 @@ class Gua {
     for (int i = 0; i < binary.length(); i++) {
     yao[i] = Character.getNumericValue(binary.charAt(i));
     print(yao[i]);
-    }    
+    }
     println();
   } // end Gua(int)
 
@@ -46,7 +46,7 @@ class Gua {
       for (y = 0; y <= 250; y = y + 50) {
       //y = (height / 6 ) * i;
       //println("y = " + y);
-      if (yao[i] == 0) { // yin        
+      if (yao[i] == 0) { // yin
         pg.rect(x, y, (segmentSize * 2), lineHeight); // left side //<>//
         pg.rect(segmentSize * 3, y, (segmentSize * 2), lineHeight); // right side //<>//
         println("-- --");
@@ -60,14 +60,14 @@ class Gua {
     pg.endDraw();
     return pg; //<>//
   } // end drawGua()
-  
-  
+
+
   String toString() {
     return join(str(yao),"");
   }// end toString()
-  
+
   int toInt() {
     return unbinary(toString());
   }// end toInt()
-  
+
 } // End Gua
